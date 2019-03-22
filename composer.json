@@ -1,0 +1,25 @@
+{
+  "name": "artsoft/yii2-art-auth",
+  "description": "Authorization Module For Art CMS",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Taras Makitra",
+      "email": "makitrataras@gmail.com"
+    },
+    {
+      "name": "Artur Markov",
+      "email": "artmarkov@mail.ru"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2-authclient": "~2.1.0",
+    "artsoft/yii2-art-core": "dev-master",
+    "artsoft/yii2-art-user": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "artsoft\\auth\\": ""
+    }
+  }
+}
