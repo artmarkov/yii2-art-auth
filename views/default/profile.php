@@ -21,6 +21,7 @@ AvatarAsset::register($this);
 $col12 = $this->context->module->gridColumns;
 $col9 = (int) ($col12 * 3 / 4);
 $col6 = (int) ($col12 / 2);
+$col4 = (int) ($col12 / 3);
 $col3 = (int) ($col12 / 4);
 ?>
 
@@ -141,11 +142,14 @@ $col3 = (int) ($col12 / 4);
                 <div class="panel-body">
 
                     <div class="row">
-                        <div class="col-md-<?= $col6 ?>">
+                        <div class="col-md-<?= $col4 ?>">
+                            <?= $form->field($model, 'last_name')->textInput(['maxlength' => 124]) ?>
+                        </div>
+                        <div class="col-md-<?= $col4 ?>">
                             <?= $form->field($model, 'first_name')->textInput(['maxlength' => 124]) ?>
                         </div>
-                        <div class="col-md-<?= $col6 ?>">
-                            <?= $form->field($model, 'last_name')->textInput(['maxlength' => 124]) ?>
+                        <div class="col-md-<?= $col4 ?>">
+                            <?= $form->field($model, 'middle_name')->textInput(['maxlength' => 124]) ?>
                         </div>
                     </div>
 
