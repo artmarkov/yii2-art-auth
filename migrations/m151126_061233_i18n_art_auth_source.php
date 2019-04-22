@@ -63,7 +63,7 @@ class m151126_061233_i18n_art_auth_source extends SourceMessagesMigration
             'Update Password' => 1,
             'User Profile' => 1,
             "User with the same email as in {client} account already exists but isn't linked to it. Login using email first to link it." => 1,
-            'The username should contain only Latin letters, numbers and the following characters: "-" and "_".' => 1,
+            'The username should contain only Latin letters, numbers and the following characters: "_".' => 1,
             'Username contains not allowed characters or words.' => 1,
             'Wrong password' => 1,
             'You could not login from this IP' => 1,
