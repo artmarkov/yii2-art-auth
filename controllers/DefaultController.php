@@ -463,7 +463,7 @@ class DefaultController extends BaseController
         $user = User::getCurrentUser();
 
         if ($user->email_confirmed == 1) {
-            return $this->renderIsAjax('confirmEmailSuccess', compact('user'));
+            return $this->renderIsAjax('confirm-email-success', compact('user'));
         }
 
         $model = new ConfirmEmailForm([
