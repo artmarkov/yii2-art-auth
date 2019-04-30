@@ -374,6 +374,7 @@ class DefaultController extends BaseController
         }
 
         if ($model->load(Yii::$app->request->post()) AND $model->updatePassword()) {
+            Yii::$app->user->logout();
             return $this->renderIsAjax('update-password-success');
         }
 
